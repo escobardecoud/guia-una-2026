@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { careers, faculties } from './data';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenerativeAI({ apiKey: import.meta.env.VITE_GOOGLE_API_KEY });
 
 // Construct a context string from our data to ground the model
 const dataContext = `
