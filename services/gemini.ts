@@ -12,7 +12,7 @@ Tu objetivo es ayudar a estudiantes a encontrar su carrera ideal basándote EXCL
 
 export const sendMessageToGemini = async (userMessage: string): Promise<string> => {
   try {
-    const modelId = 'gemini-1.5-flash'; // Cambiado a un ID de modelo estándar y estable
+    const modelId = 'gemini-2.5-flash'; // Cambiado a un ID de modelo estándar y estable
     const model = ai.getGenerativeModel({ 
       model: modelId,
       systemInstruction: dataContext 
