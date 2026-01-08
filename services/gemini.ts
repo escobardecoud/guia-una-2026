@@ -12,17 +12,17 @@ Tu objetivo es ayudar a estudiantes a encontrar su carrera ideal basándote EXCL
 
 export const sendMessageToGemini = async (userMessage: string): Promise<string> => {
   try {
-    const modelId = 'gemini-2.5-flash'; // Cambiado a un ID de modelo estándar y estable
-    const model = ai.getGenerativeModel({ 
-      model: modelId,
-      systemInstruction: dataContext 
-    });
+    // Usamos el modelo directamente para evitar errores de ruta
+    const model = ai.getGenerativeModel({ model: "gemini-2.5-flash" });
     
-    const result = await model.generateContent(userMessage);
+    // Enviamos el contexto de la UNA junto con la pregunta
+    const prompt = `${dataContext}\n\nPregunta del estudiante: ${userMessage}`;
+    
+    const result = await model.generateContent(prompt);
     const response = await result.response;
     return response.text();
   } catch (error) {
     console.error("Error en el Asesor IA:", error);
-    return "Lo siento, hubo un error al procesar tu consulta. Por favor, intenta de nuevo.";
+    return "Lo siento, no pude conectarme con el servidor. Por favor, verifica tu conexión o intenta más tarde.";
   }
 };
