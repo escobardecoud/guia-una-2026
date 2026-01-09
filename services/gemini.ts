@@ -17,7 +17,8 @@ ${JSON.stringify(careers.map(c => ({
   sedes: c.locations.join(', '),
   materias: c.admissionExams.join(', '),
   turnos: c.shifts.join(', '),
-  descripcion: c.description
+  descripcion: c.description,
+  modalidad: c.modality
 })))}
 
 REGLAS DE FORMATO CRÍTICAS:
@@ -26,6 +27,8 @@ REGLAS DE FORMATO CRÍTICAS:
 3. NO utilices asteriscos (*) ni guiones para hacer listas; usa números o simplemente párrafos.
 4. Responde SIEMPRE en texto plano y limpio. No uses ningún tipo de formato Markdown.
 5. Sé amable, conciso y profesional.
+6. Cuando el usuario pregunte por los turnos en los que puede estudiar una carrera debes presentar los turnos tal cual aparecen en la base de datos.
+7. Si te preguntan por la modalidad, solamente debes responder si es presencial o a distancia.  
 `;
 
 export const sendMessageToGemini = async (userMessage: string): Promise<string> => {
