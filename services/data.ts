@@ -295,7 +295,7 @@ export const careers: Career[] = [
     duration: '10 semestres',
     hours: 3100,
     modality: [Modality.Presencial],
-    locations: ['San Lorenzo', 'Villa Hayes', 'Paraguarí', 'Cnel. Oviedo', 'Villarrica', 'Caaguazú', 'San Estanislao', 'Caacupé'],
+    locations: ['San Lorenzo', 'Villa Hayes', 'Paraguarí', 'Coronel Oviedo', 'Villarrica', 'Caaguazú', 'San Estanislao', 'Caacupé'],
     description: 'Gestión eficiente de organizaciones y recursos empresariales.',
     profile: ['Dirigir y gestionar empresas.', 'Planificación estratégica.'],
     shifts: ['Mañana', 'Tarde', 'Noche'],
