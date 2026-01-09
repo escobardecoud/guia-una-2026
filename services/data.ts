@@ -699,7 +699,7 @@ export const careers: Career[] = [
     duration: '9 semestres',
     hours: 3465,
     modality: [Modality.Presencial],
-    locations: ['San Lorenzo', 'Pedro Juan Caballero', 'San Pedro', 'Caazapá', 'Santa Rosa (Misiones)'],
+    locations: ['San Lorenzo', 'Pedro Juan Caballero', 'San Pedro', 'Caazapá', 'Santa Rosa (Misiones)', Neuland (Boquerón)],
     description: 'Gestión de sistemas de producción agrícola y desarrollo rural.',
     profile: ['Manejo de cultivos.', 'Producción sostenible.'],
     shifts: ['Mañana', 'Tarde'],
