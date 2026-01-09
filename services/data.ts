@@ -313,7 +313,7 @@ export const careers: Career[] = [
     duration: '10 semestres',
     hours: 3320,
     modality: [Modality.Presencial],
-    locations: ['San Lorenzo', 'Paraguarí', 'Villa Hayes', 'Villarrica', 'Caacupé', 'San Pedro', 'Cnel. Oviedo', 'San Estanislao', 'Caaguazú'],
+    locations: ['San Lorenzo', 'Paraguarí', 'Villa Hayes', 'Villarrica', 'Caacupé', 'San Pedro', 'Coronel Oviedo', 'San Estanislao', 'Caaguazú'],
     description: 'Sistemas de información contable, auditoría y tributación.',
     profile: ['Elaborar estados financieros.', 'Auditoría y asesoría fiscal.'],
     shifts: ['Mañana', 'Tarde', 'Noche'],
