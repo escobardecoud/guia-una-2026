@@ -15,8 +15,8 @@ ${JSON.stringify(careers.map(c => ({
   facultad: c.faculty,
   duracion: c.duration,
   sedes: c.locations.join(', '),
-  materias: c.admissionExams.join(', ')
-  turnos: c.shifts.join(', ')
+  materias: c.admissionExams.join(', '),
+  turnos: c.shifts.join(', '),
   descripcion: c.description
 })))}
 
