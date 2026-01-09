@@ -44,7 +44,7 @@ REGLAS DE FORMATO CRÍTICAS:
 export const sendMessageToGemini = async (userMessage: string): Promise<string> => {
   try {
     // Usamos el modelo directamente para evitar errores de ruta
-    const model = ai.getGenerativeModel({ model: "gemini-3-flash-preview" });
+    const model = ai.getGenerativeModel({ model: "gemini-2.5-flash" });
     
     // Enviamos el contexto de la UNA junto con la pregunta
     const prompt = `${dataContext}\n\nPregunta del estudiante: ${userMessage}`;
