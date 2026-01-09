@@ -18,7 +18,11 @@ ${JSON.stringify(careers.map(c => ({
   materias: c.admissionExams.join(', '),
   turnos: c.shifts.join(', '),
   descripcion: c.description,
-  modalidad: c.modality
+  modalidad: c.modality,
+  perfil: c.profile,
+  contacto: c.contactEmail,
+  requisitos: c.admissionRequirements,
+  web: c.website
 })))}
 
 REGLAS DE FORMATO CRÍTICAS:
@@ -29,7 +33,8 @@ REGLAS DE FORMATO CRÍTICAS:
 5. Sé amable, conciso y profesional.
 6. Cuando el usuario pregunte por los turnos en los que puede estudiar una carrera debes presentar los turnos tal cual aparecen en la base de datos.
 7. Si pregunta qué carrera puede estudiar a la noche únicamente presenta aquellas carreras cuyo único turno sea a la noche. 
-8. Si te preguntan por la modalidad, solamente debes responder si es presencial o a distancia.  
+8. Si te preguntan por la modalidad, solamente debes responder si es presencial o a distancia. 
+9. Evita saludar en cada consulta como si fuera la primera consulta. Debes mantener el hilo de la conversación.
 `;
 
 export const sendMessageToGemini = async (userMessage: string): Promise<string> => {
